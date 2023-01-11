@@ -13,6 +13,9 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 8rem auto;
+    background-image: url("./images/bg-stars.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 .head{
     text-transform: uppercase;
@@ -33,9 +36,6 @@ main{
 .timer{
     font-size: 4rem;
     color: hsl(345, 95%, 68%);
-    background-image: url("./images/bg-stars.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
     border: 2px solid hsl(236, 21%, 26%);
     border-radius: 10px;
     background-color: hsl(236, 21%, 26%);
