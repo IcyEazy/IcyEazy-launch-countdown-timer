@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    background-color: hsl(234, 17%, 12%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+}
+.head{
+    text-transform: uppercase;
+    color: white;
+    word-spacing: .4rem;
+    letter-spacing: .3rem;
+    font-size: 25px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.box{
+    margin: auto 1rem;
+}
+.timer{
+    font-size: 4rem;
+    color: hsl(345, 95%, 68%);
+    background-image: url("./images/bg-stars.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 2px solid hsl(236, 21%, 26%);
+    border-radius: 10px;
+    background-color: hsl(236, 21%, 26%);
+    -webkit-box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.5);
+}
+hr{
+    background-color: hsl(236, 21%, 26%);
+    height: 5px;
+    border-radius: 5px;
+    border-color: hsl(236, 21%, 26%);
+    width: 100px;
+    margin-top: -3rem;
+}
+.timer-type{
+    text-transform: uppercase;
+    color: hsl(237, 18%, 59%);
+    margin-top: 4.5rem;
+}
+.pinterest{
+    margin: auto 1.5rem;
+}
+
+footer{
+    background-image: url("./images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 6rem 0;
+}
+a{
+    transition: all 0.4s;
+}
+svg:hover path{
+    fill: hsl(345, 95%, 68%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.flip{
+    -webkit-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    transition: all 1.25s;
+}
+
+@media screen and (max-width: 500px){
+    main{
+        margin: 6rem .5rem;
+    }
+    .head{
+        font-size: 23px;
+    }
+    .box{
+        margin: auto .5rem;
+    }
+    .timer{
+        font-size: 2.5rem;
+    }
+    hr{
+        width: 70px;
+        margin-top: -2rem;
+    }
+    .timer-type{
+        margin-top: 3.3rem;
+    }
+}
